@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>inFieldLabel.jquery example</title>
+	<meta name="description" content="jQuery.inFeildLabel example">
+
+	<style>
+		.emailAddress { width: 280px; }
+	</style>
+</head>
+
+<body>
+
+	<input class="emailAddress" type="text" name="" value="Enter Email Here" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="inFieldLabel.jquery.js"></script>
+	<script>
+		$(function(){
+			$('.emailAddress').inFieldLabel({ text: 'i.e. Joe@gmail.com, Sue@gmail.com' });
+		});
+	</script>
+
+</body>
+
+</html>
