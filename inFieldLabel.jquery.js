@@ -7,7 +7,9 @@
 	      textColor		: '#666666',
 	      typeColor		: '#333333'
 	    };
-		
+	     
+            // If options exist, lets merge them
+	    // with our default settings	
 	    if ( options ) { 
 	    	$.extend( settings, options );
 	    }
@@ -36,8 +38,7 @@
 	    }
 	    
 	    return this.each(function() {        
-	      // If options exist, lets merge them
-	      // with our default settings
+	      
 	      var $this = $(this);
 		  
 	      // Bind Events
