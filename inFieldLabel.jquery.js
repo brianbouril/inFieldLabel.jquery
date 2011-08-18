@@ -10,9 +10,7 @@
 	     
             // If options exist, lets merge them
 	    // with our default settings	
-	    if ( options ) { 
-	    	$.extend( settings, options );
-	    }
+	    $.extend(settings, options || {});
 		
 	    function onFocus(){
 	    	var $this = $(this);
